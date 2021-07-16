@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89270D30269ECD6F0015830F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89270D2F269ECD6F0015830F /* MapView.swift */; };
 		899888BC269BD7CB00DB73D0 /* BucketListUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899888BB269BD7CB00DB73D0 /* BucketListUIApp.swift */; };
 		899888BE269BD7CB00DB73D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899888BD269BD7CB00DB73D0 /* ContentView.swift */; };
 		899888C0269BD7CB00DB73D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899888BF269BD7CB00DB73D0 /* Assets.xcassets */; };
 		899888C3269BD7CB00DB73D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899888C2269BD7CB00DB73D0 /* Preview Assets.xcassets */; };
+		89E3429E269D5377000A088A /* Oyster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3429D269D5377000A088A /* Oyster.swift */; };
+		89E342A0269D55F9000A088A /* AddNewOyster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3429F269D55F9000A088A /* AddNewOyster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89270D2F269ECD6F0015830F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		899888B8269BD7CB00DB73D0 /* BucketListUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketListUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899888BB269BD7CB00DB73D0 /* BucketListUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUIApp.swift; sourceTree = "<group>"; };
 		899888BD269BD7CB00DB73D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		899888BF269BD7CB00DB73D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		899888C2269BD7CB00DB73D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		899888C4269BD7CB00DB73D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E3429D269D5377000A088A /* Oyster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oyster.swift; sourceTree = "<group>"; };
+		89E3429F269D55F9000A088A /* AddNewOyster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewOyster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				899888BB269BD7CB00DB73D0 /* BucketListUIApp.swift */,
-				899888BD269BD7CB00DB73D0 /* ContentView.swift */,
+				89E342A1269D5608000A088A /* View */,
+				89E342A2269D560C000A088A /* Model */,
 				899888BF269BD7CB00DB73D0 /* Assets.xcassets */,
 				899888C4269BD7CB00DB73D0 /* Info.plist */,
 				899888C1269BD7CB00DB73D0 /* Preview Content */,
@@ -67,6 +74,24 @@
 				899888C2269BD7CB00DB73D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89E342A1269D5608000A088A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				899888BD269BD7CB00DB73D0 /* ContentView.swift */,
+				89E3429F269D55F9000A088A /* AddNewOyster.swift */,
+				89270D2F269ECD6F0015830F /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89E342A2269D560C000A088A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89E3429D269D5377000A088A /* Oyster.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				899888BE269BD7CB00DB73D0 /* ContentView.swift in Sources */,
+				89E3429E269D5377000A088A /* Oyster.swift in Sources */,
+				89270D30269ECD6F0015830F /* MapView.swift in Sources */,
+				89E342A0269D55F9000A088A /* AddNewOyster.swift in Sources */,
 				899888BC269BD7CB00DB73D0 /* BucketListUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
