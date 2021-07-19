@@ -53,11 +53,12 @@ struct ContentView: View {
                 showingEditScreen.toggle()
             })
         }
-        .sheet(isPresented: $showingEditScreen) {
+        .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
             if selectedPlace != nil {
                 EditView(placemark: selectedPlace!)
             }
         }
+        .onAppear(perform: loadData)
     }
     
     func getDocumentDirectory() -> URL {
@@ -81,11 +82,14 @@ struct ContentView: View {
     }
     
     func saveData() {
+        
         do {
+            
             let fileName = getDocumentDirectory().appendingPathComponent("SavedPlaces")
             let data = try JSONEncoder().encode(self.locations)
             try data.write(to: fileName, options: [.atomicWrite, .completeFileProtection])
         } catch {
+            
             print("unable to save data")
         }
     }
